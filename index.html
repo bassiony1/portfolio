@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mahmoud Bassiony | Dark Mode</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              mono: ["Fira Code", "monospace"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="antialiased relative is-horizontal">
+    <div
+      id="home-content"
+      class="absolute inset-0 flex flex-col justify-center items-end pr-8 md:pr-40 lg:pr-64 z-0 overflow-y-auto"
+    >
+      <div class="max-w-2xl text-right p-6 relative pt-[10rem] lg:pt-6">
+        <h1
+          class="text-5xl md:text-7xl font-black mb-2 tracking-tighter text-white leading-tight"
+        >
+          MAHMOUD<br /><span class="text-slate-600">BASSIONY</span>
+        </h1>
+        <div
+          class="h-1 w-32 bg-red-900 ml-auto mb-6 shadow-[0_0_15px_rgba(220,38,38,0.5)]"
+        ></div>
+        <p class="text-xl md:text-2xl text-slate-300 font-bold mb-2">
+          Software Engineer
+        </p>
+        <p
+          class="text-md md:text-lg text-slate-500 font-light mb-8 max-w-lg ml-auto"
+        >
+          Junior Computer Engineering with a disciplined,results-oriented
+          mindset.<br />
+          combining technical precision with the leadership and adaptability
+          gained from high-pressure service.
+        </p>
+
+        <div class="flex gap-4 justify-end mb-8">
+          <a
+            href="https://www.linkedin.com/in/bassiony17"
+            class="text-slate-600 hover:text-blue-500 transition-colors text-3xl"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/bassiony1"
+            class="text-slate-600 hover:text-white transition-colors text-3xl"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="mailto:mahmoudbassiony17@gmail.com"
+            class="text-slate-600 hover:text-red-500 transition-colors text-3xl"
+            ><i class="fas fa-envelope"></i
+          ></a>
+        </div>
+
+        <p
+          class="text-xs font-bold text-slate-700 uppercase tracking-widest animate-pulse"
+        >
+          <i class="fas fa-arrow-left mr-2"></i> Select a bar to view details
+        </p>
+      </div>
+    </div>
+
+    <div
+      id="bars-container"
+      class="absolute inset-0 z-10 pointer-events-none min-h-[100dvh]"
+    >
+      <!-- Professional Summary -->
+      <div
+        class="portfolio-bar absolute pointer-events-auto shadow-[0_0_50px_rgba(0,0,0,0.5)] overflow-hidden bg-slate-900 border-l border-slate-800"
+        data-index="0"
+      >
+        <div
+          class="bar-handle absolute z-20 bg-[#0f172a] text-slate-400 flex items-center justify-center hover:bg-black hover:text-white cursor-pointer border-r border-slate-800 transition-colors duration-500"
+        >
+          <span
+            class="handle-text text-sm md:text-lg font-bold tracking-[0.2em] uppercase"
+            >Professional Summary</span
+          >
+        </div>
+        <div
+          class="content-container absolute bg-[#0f172a] inset-0 z-10 flex flex-col text-slate-300"
+        >
+          <div class="scroll-area flex-1 overflow-y-auto p-6 md:p-12 lg:p-16">
+            <div class="max-w-4xl mx-auto">
+              <h2 class="text-4xl md:text-6xl font-black mb-8 text-white">
+                Professional Summary
+              </h2>
+              <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div
+                  class="md:col-span-2 text-lg text-slate-400 space-y-6 leading-relaxed"
+                >
+                  <p>
+                    Junior Computer Engineering with a disciplined,
+                    results-oriented mindset.
+                  </p>
+                  <p>
+                    I specialize in architecting scalable Backend systems using
+                    <span class="font-bold text-white"
+                      >Python, Django, and Docker</span
+                    >, with decent expertise in real-time communication and
+                    database optimization, combining technical precision with
+                    the leadership and adaptability gained from high-pressure
+                    service.
+                  </p>
+                  <!-- <div
+                    class="bg-[#1e293b] border-l-4 border-blue-900 p-4 rounded-r"
+                  >
+                    <p class="text-blue-300 font-semibold italic">
+                      "Award-winning developer (Dell Envision Top 27 MENA)
+                      combining technical precision with leadership gained from
+                      high-pressure service as a Platoon Leader."
+                    </p>
+                  </div> -->
+                </div>
+                <div
+                  class="bg-[#1e293b] p-6 rounded-xl h-fit border border-slate-800"
+                >
+                  <h3
+                    class="font-bold text-white mb-4 uppercase text-sm tracking-wider"
+                  >
+                    Contact Info
+                  </h3>
+                  <ul class="space-y-4 text-sm text-slate-400">
+                    <li class="flex items-center">
+                      <i class="fas fa-map-marker-alt w-6 text-slate-600"></i>
+                      Cairo, Egypt
+                    </li>
+                    <li class="flex items-center">
+                      <i class="fas fa-phone w-6 text-slate-600"></i> +20 115
+                      409 64
+                    </li>
+                    <li class="flex items-center">
+                      <i class="fas fa-envelope w-6 text-slate-600"></i>
+                      mahmoudbassiony17@gmail.com
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Education -->
+      <div
+        class="portfolio-bar absolute pointer-events-auto shadow-[0_0_50px_rgba(0,0,0,0.5)] overflow-hidden bg-[#172554] border-l border-blue-900"
+        data-index="1"
+      >
+        <div
+          class="bar-handle absolute z-20 bg-[#1e3a8a] text-blue-200 flex items-center justify-center hover:bg-[#172554] hover:text-white cursor-pointer border-r border-blue-900"
+        >
+          <span
+            class="handle-text text-sm md:text-lg font-bold tracking-[0.2em] uppercase"
+            >Education</span
+          >
+        </div>
+        <div
+          class="content-container absolute bg-[#172554] inset-0 z-10 flex flex-col text-blue-100"
+        >
+          <div class="scroll-area flex-1 overflow-y-auto p-6 md:p-12 lg:p-16">
+            <div class="max-w-3xl mx-auto">
+              <h2 class="text-4xl md:text-6xl font-black mb-10 text-white">
+                Education
+              </h2>
+              <div class="relative border-l-2 border-blue-800 ml-3 space-y-12">
+                <div class="relative pl-8">
+                  <div
+                    class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-blue-500 border-4 border-[#172554] shadow"
+                  ></div>
+                  <span class="text-sm font-bold text-blue-400 mb-1 block"
+                    >Spring 2025</span
+                  >
+                  <h3 class="text-xl md:text-2xl font-bold text-white">
+                    Advanced Engineering Diploma
+                  </h3>
+                  <p class="text-blue-200 font-medium">
+                    Computer Engineering & Control Systems
+                  </p>
+                  <p class="text-blue-400 text-sm mb-2">Mansoura University</p>
+                  <div
+                    class="inline-block bg-blue-900/50 text-blue-200 text-xs font-bold px-3 py-1 rounded-full border border-blue-700"
+                  >
+                    Grade: A+ (4.0 GPA)
+                  </div>
+                </div>
+                <div class="relative pl-8">
+                  <div
+                    class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-blue-700 border-4 border-[#172554] shadow"
+                  ></div>
+                  <span class="text-sm font-bold text-blue-400 mb-1 block"
+                    >Fall 2024</span
+                  >
+                  <h3 class="text-xl md:text-2xl font-bold text-white">
+                    Basic Engineering Diploma
+                  </h3>
+                  <p class="text-blue-200 font-medium">
+                    Computer Engineering & Control Systems
+                  </p>
+                  <div
+                    class="inline-block bg-blue-900/50 text-blue-200 text-xs font-bold px-3 py-1 rounded-full border border-blue-700"
+                  >
+                    Grade: A+ (4.0 GPA)
+                  </div>
+                </div>
+                <div class="relative pl-8">
+                  <div
+                    class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-600 border-4 border-[#172554] shadow"
+                  ></div>
+                  <span class="text-sm font-bold text-slate-400 mb-1 block"
+                    >2018 – 2023</span
+                  >
+                  <h3 class="text-xl md:text-2xl font-bold text-white">
+                    B.Sc. in Computer Engineering
+                  </h3>
+                  <div
+                    class="inline-block bg-yellow-900/30 text-yellow-500 text-xs font-bold px-3 py-1 rounded-full border border-yellow-900/50"
+                  >
+                    <i class="fas fa-medal mr-1"></i> Excellent with Honors
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Skills -->
+      <div
+        class="portfolio-bar absolute pointer-events-auto shadow-[0_0_50px_rgba(0,0,0,0.5)] overflow-hidden bg-[#022c22] border-l border-emerald-900"
+        data-index="2"
+      >
+        <div
+          class="bar-handle absolute z-20 bg-[#064e3b] text-emerald-200 flex items-center justify-center hover:bg-[#022c22] hover:text-white cursor-pointer border-r border-emerald-900"
+        >
+          <span
+            class="handle-text text-sm md:text-lg font-bold tracking-[0.2em] uppercase"
+            >Skills</span
+          >
+        </div>
+        <div
+          class="content-container absolute bg-[#022c22] inset-0 z-10 flex flex-col text-emerald-100"
+        >
+          <div class="scroll-area flex-1 overflow-y-auto p-6 md:p-12 lg:p-16">
+            <div class="max-w-5xl mx-auto">
+              <h2 class="text-4xl md:text-6xl font-black mb-10 text-white">
+                Technical Arsenal
+              </h2>
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <div
+                  class="bg-[#064e3b]/40 p-6 rounded-xl border border-emerald-900/50"
+                >
+                  <div class="flex items-center mb-4 text-emerald-400">
+                    <i class="fas fa-server text-2xl mr-3"></i>
+                    <h3 class="text-xl font-bold">Backend</h3>
+                  </div>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="skill-tag">Python</span
+                    ><span class="skill-tag">Django & DRF</span
+                    ><span class="skill-tag">Channels</span>
+                    <span class="skill-tag">Celery</span>
+                    <span class="skill-tag">Node</span>
+                    <span class="skill-tag">express</span>
+                    <span class="skill-tag">WebSockets</span>
+                  </div>
+                </div>
+                <div
+                  class="bg-[#064e3b]/40 p-6 rounded-xl border border-emerald-900/50"
+                >
+                  <div class="flex items-center mb-4 text-emerald-400">
+                    <i class="fas fa-database text-2xl mr-3"></i>
+                    <h3 class="text-xl font-bold">Databases</h3>
+                  </div>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="skill-tag">PostgreSQL</span
+                    ><span class="skill-tag">MySQL</span
+                    ><span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">msqlserver</span>
+                    <span class="skill-tag">Redis</span>
+                  </div>
+                </div>
+                <div
+                  class="bg-[#064e3b]/40 p-6 rounded-xl border border-emerald-900/50"
+                >
+                  <div class="flex items-center mb-4 text-emerald-400">
+                    <i class="fas fa-box-open text-2xl mr-3"></i>
+                    <h3 class="text-xl font-bold">DevOps & Tools</h3>
+                  </div>
+                  <!-- Tools Skills -->
+                  <div class="flex flex-wrap gap-2">
+                    <span class="skill-tag">Docker</span
+                    ><span class="skill-tag">Docker Compose</span
+                    ><span class="skill-tag">Git/GitHub</span
+                    ><span class="skill-tag">Postman</span>
+                  </div>
+                </div>
+                <div
+                  class="bg-[#064e3b]/40 p-6 rounded-xl border border-emerald-900/50"
+                >
+                  <div class="flex items-center mb-4 text-emerald-400">
+                    <i class="fas fa-code text-2xl mr-3"></i>
+                    <h3 class="text-xl font-bold">Frontend</h3>
+                  </div>
+                  <!-- Front Skills -->
+                  <div class="flex flex-wrap gap-2">
+                    <span class="skill-tag">Html</span>
+                    <span class="skill-tag">CSS</span>
+                    <span class="skill-tag">Bootstrap</span>
+                    <span class="skill-tag">Tailwind</span>
+                    <span class="skill-tag">JS/TS</span>
+                    <span class="skill-tag">React.js</span>
+                    <span class="skill-tag">Redux Toolkit</span>
+                  </div>
+                </div>
+                <div
+                  class="bg-[#064e3b]/40 p-6 rounded-xl border border-emerald-900/50"
+                >
+                  <div class="flex items-center mb-4 text-emerald-400">
+                    <i class="fas fa-code text-2xl mr-3"></i>
+                    <h3 class="text-xl font-bold">Programming Languages</h3>
+                  </div>
+                  <!-- Front Skills -->
+                  <div class="flex flex-wrap gap-2">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">JS</span>
+                    <span class="skill-tag">C#</span>
+                    <span class="skill-tag">C</span>
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">Java</span>
+                  </div>
+                </div>
+                <div
+                  class="bg-[#064e3b]/40 p-6 rounded-xl border border-emerald-900/50"
+                >
+                  <div class="flex items-center mb-4 text-emerald-400">
+                    <i class="fas fa-code text-2xl mr-3"></i>
+                    <h3 class="text-xl font-bold">Core Concepts</h3>
+                  </div>
+                  <!-- Core Skills -->
+                  <div class="flex flex-wrap gap-2">
+                    <span class="skill-tag">Data Structures & Algorithms</span>
+                    <span class="skill-tag">Design Patterns</span>
+                    <span class="skill-tag">Unit Testing</span>
+                    <span class="skill-tag">System Design Basics</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Projects -->
+      <div
+        class="portfolio-bar absolute pointer-events-auto shadow-[0_0_50px_rgba(0,0,0,0.5)] overflow-hidden bg-[#450a0a] border-l border-red-900"
+        data-index="3"
+      >
+        <div
+          class="bar-handle absolute z-20 bg-[#7f1d1d] text-red-200 flex items-center justify-center hover:bg-[#450a0a] hover:text-white cursor-pointer border-r border-red-900"
+        >
+          <span
+            class="handle-text text-sm md:text-lg font-bold tracking-[0.2em] uppercase"
+            >Projects</span
+          >
+        </div>
+        <div
+          class="content-container absolute bg-[#450a0a] inset-0 z-10 flex flex-col text-red-100"
+        >
+          <div class="scroll-area flex-1 overflow-y-auto p-6 md:p-12 lg:p-16">
+            <div class="max-w-5xl mx-auto">
+              <h2 class="text-4xl md:text-6xl font-black mb-6 text-white">
+                Technical Projects
+              </h2>
+
+              <div class="flex flex-wrap gap-3 mb-10" id="project-filters">
+                <button
+                  class="filter-btn active"
+                  onclick="filterProjects('backend', this)"
+                >
+                  Backend
+                </button>
+                <button
+                  class="filter-btn"
+                  onclick="filterProjects('frontend', this)"
+                >
+                  Frontend
+                </button>
+                <button
+                  class="filter-btn"
+                  onclick="filterProjects('fullstack', this)"
+                >
+                  Full Stack
+                </button>
+                <button
+                  class="filter-btn"
+                  onclick="filterProjects('automation', this)"
+                >
+                  Automation
+                </button>
+                <button
+                  class="filter-btn"
+                  onclick="filterProjects('desktop', this)"
+                >
+                  Desktop App
+                </button>
+              </div>
+
+              <div
+                id="projects-grid"
+                class="grid grid-cols-1 md:grid-cols-2 gap-6 pb-20"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- History -->
+      <div
+        class="portfolio-bar absolute pointer-events-auto shadow-[0_0_50px_rgba(0,0,0,0.5)] overflow-hidden bg-[#312e81] border-l border-indigo-900"
+        data-index="4"
+      >
+        <div
+          class="bar-handle absolute z-20 bg-[#3730a3] text-indigo-200 flex items-center justify-center hover:bg-[#312e81] hover:text-white cursor-pointer border-r border-indigo-900"
+        >
+          <span
+            class="handle-text text-sm md:text-lg font-bold tracking-[0.2em] uppercase"
+            >History</span
+          >
+        </div>
+        <div
+          class="content-container absolute bg-[#312e81] inset-0 z-10 flex flex-col text-indigo-100"
+        >
+          <div class="scroll-area flex-1 overflow-y-auto p-6 md:p-12 lg:p-16">
+            <div class="max-w-3xl mx-auto">
+              <h2 class="text-4xl md:text-6xl font-black mb-10 text-white">
+                History & Info
+              </h2>
+              <h3
+                class="text-2xl font-bold mb-6 border-b border-indigo-500 pb-2"
+              >
+                Professional Development
+              </h3>
+              <div class="space-y-8 mb-12">
+                <div>
+                  <div class="flex justify-between items-baseline mb-2">
+                    <h4 class="font-bold text-lg text-white">
+                      ITI - Python Backend Trainee
+                    </h4>
+                    <span class="text-xs text-indigo-300 font-mono"
+                      >Aug 2021</span
+                    >
+                  </div>
+                  <ul class="text-sm text-indigo-200">
+                    <li>
+                      Completed a 150-hour intensive bootcamp covering Python,
+                      PostgreSQL, and Django.
+                    </li>
+                    <li>
+                      Designed and implemented relational database schemas and
+                      developed RESTful logic for web applications.
+                    </li>
+                    <li>
+                      Built a final capstone project integrating the full stack
+                      (HTML, CSS, JS) with a Django backend.
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <div class="flex justify-between items-baseline mb-2">
+                    <h4 class="font-bold text-lg text-white">
+                      ITI - Android Development Trainee
+                    </h4>
+                    <span class="text-xs text-indigo-300 font-mono"
+                      >Sep 2022</span
+                    >
+                  </div>
+                  <ul class="text-sm text-indigo-200">
+                    <li>
+                      Completed an intensive technical track focused on Native
+                      Android Development using Java.
+                    </li>
+                    <li>
+                      Developed functional mobile applications utilizing Android
+                      Layouts, Intents, and Adapter Views.
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <div class="flex justify-between items-baseline mb-2">
+                    <h4 class="font-bold text-lg text-white">
+                      Aspire Employability & Leadership Program
+                    </h4>
+                    <span class="text-xs text-indigo-300 font-mono"
+                      >Mar 2022</span
+                    >
+                  </div>
+                  <ul class="text-sm text-indigo-200">
+                    <li>
+                      Completed a comprehensive training program focused on
+                      professional character, competence, and commitment.
+                    </li>
+
+                    <li>
+                      Analyzed team dynamics and adopted strategies for
+                      high-performance team collaboration and conflict
+                      resolution.
+                    </li>
+                    <li>
+                      Developed skills in audience-tailored presentation and
+                      professional business communication.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Soft Skills -->
+              <h3
+                class="text-2xl font-bold mb-6 border-b border-indigo-500 pb-2"
+              >
+                Professional Attributes
+              </h3>
+              <div class="space-y-8 mb-12">
+                <div>
+                  <div class="flex justify-between items-baseline mb-2">
+                    <h4 class="font-bold text-lg text-white">
+                      Leadership & Discipline
+                    </h4>
+                  </div>
+                  <p class="text-sm text-indigo-200">
+                    Proven experience leading teams under high-pressure
+                    conditions as a Military Officer (Platoon Leader).
+                  </p>
+                </div>
+                <div>
+                  <div class="flex justify-between items-baseline mb-2">
+                    <h4 class="font-bold text-lg text-white">
+                      Integrity & Accountability
+                    </h4>
+                  </div>
+                  <p class="text-sm text-indigo-200">
+                    Committed to absolute professional honesty; I take full
+                    ownership of deliverables and deadlines.
+                  </p>
+                </div>
+                <div>
+                  <div class="flex justify-between items-baseline mb-2">
+                    <h4 class="font-bold text-lg text-white">Adaptability</h4>
+                  </div>
+                  <p class="text-sm text-indigo-200">
+                    Rapid learner capable of mastering new technologies quickly,
+                    with a strong ability to execute directives.
+                  </p>
+                </div>
+                <div>
+                  <div class="flex justify-between items-baseline mb-2">
+                    <h4 class="font-bold text-lg text-white">
+                      Meticulous Attention to Detail
+                    </h4>
+                  </div>
+                  <p class="text-sm text-indigo-200">
+                    Translating military precision into software development,
+                    ensuring clean code and error-free deployments.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="bg-indigo-950/50 p-6 rounded-lg border border-indigo-800"
+              >
+                <h3 class="text-xl font-bold mb-2 text-white">
+                  Military Service
+                </h3>
+                <p class="font-semibold text-indigo-300">
+                  Reserve Officer (Platoon Leader)
+                </p>
+                <p class="text-sm text-indigo-200 mt-2">
+                  Gained extensive experience in leadership, discipline, and
+                  high-pressure decision making.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+h

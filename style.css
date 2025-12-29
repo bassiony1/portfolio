@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Fira+Code:wght@400;600&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  overflow: hidden;
+  background-color: #020617; /* Slate 950 */
+  color: #e2e8f0;
+}
+
+/* === 1.5s Cinematic Transitions === */
+.portfolio-bar {
+  transition: left 1.5s cubic-bezier(0.25, 1, 0.5, 1),
+    right 1.5s cubic-bezier(0.25, 1, 0.5, 1),
+    top 1.5s cubic-bezier(0.25, 1, 0.5, 1),
+    bottom 1.5s cubic-bezier(0.25, 1, 0.5, 1),
+    width 1.5s cubic-bezier(0.25, 1, 0.5, 1),
+    height 1.5s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: left, right, top, bottom, width, height;
+}
+
+.bar-handle {
+  transition: all 1.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Sync Text Rotation: Logic controlled by body class in JS */
+.handle-text {
+  display: inline-block;
+  transition: transform 1.5s cubic-bezier(0.25, 1, 0.5, 1);
+  transform-origin: center;
+  white-space: nowrap;
+}
+
+/* Desktop Mode (Horizontal Bars) -> Rotate Text -90deg */
+body.is-horizontal .handle-text {
+  transform: rotate(-90deg);
+}
+
+/* Mobile Mode (Vertical Bars) -> Rotate Text 0deg */
+body.is-vertical .handle-text {
+  transform: rotate(0deg);
+}
+
+/* Content Animations */
+#home-content {
+  transition: all 0.1s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.1s ease;
+}
+
+.content-container {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.1s ease-in-out 0.5s;
+}
+
+.portfolio-bar.active .content-container {
+  opacity: 1;
+  pointer-events: auto;
+}
+/* Project Filter Buttons */
+.filter-btn {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid #7f1d1d;
+  color: #fca5a5;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.filter-btn:hover {
+  background: #7f1d1d;
+  color: white;
+}
+.filter-btn.active {
+  background: #ef4444; /* Red 500 */
+  color: white;
+  border-color: #ef4444;
+  box-shadow: 0 0 15px rgba(239, 68, 68, 0.4);
+}
+/* Dark Scrollbar */
+.scroll-area::-webkit-scrollbar {
+  width: 6px;
+}
+.scroll-area::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+.scroll-area::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+.scroll-area::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+.skill-tag {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  color: #94a3b8;
+  border-radius: 4px;
+}
