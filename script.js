@@ -16,14 +16,147 @@ const projectsData = [
   },
 
   // FRONTEND
-  // {
-  //   category: "frontend",
-  //   title: "Dashboard UI",
-  //   desc: "Responsive admin dashboard with data visualization charts and dark mode toggle.",
-  //   tech: ["React.js", "Tailwind CSS", "Recharts"],
-  //   link: "#",
-  // },
-
+  {
+    category: "frontend",
+    title: "Khaier",
+    desc: "A charity platform connecting donors with verified NGOs, featuring donation tracking and impact reports.",
+    tech: [
+      "HTML",
+      "React.js",
+      "TypeScript",
+      "React Router",
+      "Styled Components",
+      "Vite",
+    ],
+    link: "https://khaier.vercel.app/",
+  },
+  {
+    category: "frontend",
+    title: "Hekto E-commerce Landing Page",
+    desc: "A modern e-commerce landing page with responsive design and interactive elements.",
+    tech: ["HTML", "CSS", "React.js", "React Styled Components", "Vite"],
+    link: "https://project01-ecommerce-app.vercel.app/",
+  },
+  {
+    category: "frontend",
+    title: "Fylo dark theme landing page",
+    desc: "This design has some nice layout challenges in it. A perfect training ground to practice your Flexbox and/or Grid skills.",
+    tech: ["HTML", "Tailwind CSS", "TypeScript", "Vite"],
+    link: "https://fylo-dark-theme-landing-page-drab-phi.vercel.app/",
+  },
+  {
+    category: "frontend",
+    title: "Bookmark landing page",
+    desc: "A simple bookmark landing page with a clean and modern design, featuring responsive layout and interactive elements.",
+    tech: ["HTML", "Vanilla CSS", "JS"],
+    link: "https://bassiony1.github.io/bookmark-landing-page/",
+  },
+  {
+    category: "frontend",
+    title: "X-O Game",
+    desc: "Frontend Mentor Challenge: A classic Tic Tac Toe game with a sleek and modern design, featuring single-player and two-player modes.",
+    tech: ["HTML", "CSS", "React.js", "React Styled Components", "Vite"],
+    link: "https://react-xo-game.vercel.app/",
+  },
+  {
+    category: "frontend",
+    title: "Space tourism website",
+    desc: "Multi-page space tourism website.",
+    tech: ["HTML", "Tailwind CSS", "React.js", "Vite"],
+    link: "https://bassiony1.github.io/music-player/",
+  },
+  {
+    category: "frontend",
+    title: "Github Finder App",
+    desc: "A React.js application that allows users to search for GitHub profiles and view detailed information about users and their repositories.",
+    tech: ["HTML", "CSS", "React Styled Components", "React.js", "Vite"],
+    link: "https://github-finder-bassiony1.vercel.app/",
+  },
+  {
+    category: "frontend",
+    title: "Multi-step Form component",
+    desc: "Frontend Advanced Challenge: An excellent test for your form-building and JS skills, this project pose many challenges along the way to completion.",
+    tech: ["HTML", "Tailwind CSS", "React.js", "TypeScript", "Vite"],
+    link: "https://multi-step-form-main-omega.vercel.app/",
+  },
+  {
+    category: "frontend",
+    title: "Modern To Do List",
+    desc: "A sleek and modern to-do list application with light and dark mode support, local storage, and drag-and-drop functionality.",
+    tech: ["HTML", "Vanilla CSS", "Vanilla js", "Vite"],
+    link: "https://todo-app-pi-jade.vercel.app/",
+  },
+  {
+    category: "frontend",
+    title: "Password Generator App",
+    desc: "A Password Generator App that creates strong, random passwords based on user-selected criteria.",
+    tech: ["HTML", "Vanilla CSS", "Vanilla js"],
+    link: "https://bassiony1.github.io/password-generator-app/",
+  },
+  {
+    category: "frontend",
+    title: "Picker Wheel",
+    desc: "A fun and interactive picker wheel that allows users to input options and spin the wheel to make random selections.",
+    tech: ["HTML", "Vanilla CSS", "Vanilla js"],
+    link: "https://bassiony1.github.io/picker/",
+  },
+  {
+    category: "frontend",
+    title: "Music Player App",
+    desc: "A sleek and modern dark music player application for anime Bleach soundtracks, featuring OST management and playback controls.",
+    tech: ["HTML", "CSS", "js"],
+    link: "https://react-xo-game.vercel.app/",
+  },
+  {
+    category: "frontend",
+    title: "Sticky Notes App",
+    desc: "A simple and intuitive sticky notes application that allows users to create, edit, and delete notes on a virtual board.",
+    tech: ["HTML", "Vanilla CSS", "Vanilla js"],
+    link: "https://bassiony1.github.io/sticky-notes/",
+  },
+  {
+    category: "frontend",
+    title: "Space tourism website",
+    desc: "Multi-page space tourism website.",
+    tech: ["HTML", "Tailwind CSS", "React.js", "Vite"],
+    link: "https://space-tourism-ten-beta.vercel.app/",
+  },
+  {
+    category: "frontend",
+    title: "Kayoanime Clone",
+    desc: "A clone of The website KayoAnime.com",
+    tech: ["HTML", "Bootstrap CSS", "Js"],
+    link: "https://kayo-anime-cloner.vercel.app/",
+  },
+  {
+    category: "frontend",
+    title: "Interactive card details form Challenge",
+    desc: "an excellent way to practice DOM manipulation and form validation while also putting your HTML and CSS skills to the test.",
+    tech: ["HTML", "Tailwind CSS", "TypeScript", "Vite"],
+    link: "https://interactive-card-details-form-main-nine.vercel.app/",
+  },
+  {
+    category: "frontend",
+    title: "Ip Address Tracker",
+    desc: "A sleek and modern IP Address Tracker application that allows users to track IP addresses and view their location on an interactive map.",
+    tech: ["HTML", "Vanilla CSS", "JS"],
+    link: "https://bassiony1.github.io/ip-tracker/",
+  },
+  {
+    category: "frontend",
+    title: "Url Shortener",
+    desc: "A sleek and modern URL shortener application that allows users to create shortened links.",
+    tech: ["HTML", "Vanilla CSS", "JS"],
+    link: "https://bassiony1.github.io/url-shortner/",
+  },
+  {
+    category: "frontend",
+    title: "Results Summary component",
+    desc: "This fun project was an excellent way to practice my HTML and CSS skills .",
+    tech: ["HTML", "Tailwind CSS", "TypeScript", "Vite"],
+    link: "https://results-summary-component-main-teal-phi.vercel.app/",
+  },
+  // endregion frontend
   // FULL STACK
   {
     category: "fullstack",
@@ -41,22 +174,22 @@ const projectsData = [
   },
 
   // AUTOMATION
-  // {
-  //   category: "automation",
-  //   title: "Data Scraper Bot",
-  //   desc: "Automated python script to scrape real estate data and export to Excel daily.",
-  //   tech: ["Python", "Selenium", "BeautifulSoup", "Pandas"],
-  //   link: "#",
-  // },
+  {
+    category: "automation",
+    title: "Tv-Shows subtitle Renamer",
+    desc: "A Light weight Windows Form To Rename Your Tv-Show Videos and subtitles with The Same Name From IMDB Using Some Scrapping and Regex and system Modules.",
+    tech: ["C#", ".NET WinForms", "IMDB Scraping"],
+    link: "https://github.com/bassiony1/Tv-Shows-And-Subtitle-Renamer",
+  },
 
   // DESKTOP APP
-  // {
-  //   category: "desktop",
-  //   title: "Inventory Manager",
-  //   desc: "Desktop application for offline inventory tracking for local warehouses.",
-  //   tech: ["Python", "PyQt5", "SQLite"],
-  //   link: "#",
-  // },
+  {
+    category: "desktop",
+    title: "Tv-Shows subtitle Renamer",
+    desc: "A Light weight Windows Form To Rename Your Tv-Show Videos and subtitles with The Same Name From IMDB Using Some Scrapping and Regex and system Modules.",
+    tech: ["C#", ".NET WinForms", "IMDB Scraping"],
+    link: "https://github.com/bassiony1/Tv-Shows-And-Subtitle-Renamer",
+  },
 ];
 
 function filterProjects(category, btnElement) {
@@ -96,7 +229,7 @@ function filterProjects(category, btnElement) {
     card.innerHTML = `
                     <div class="flex justify-between items-start mb-2">
                         <h3 class="text-xl font-bold text-white">${project.title}</h3>
-                        <a href="${project.link}" class="text-red-400 hover:text-white transition-colors"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="${project.link}" target="_blank" class="text-red-400 hover:text-white transition-colors"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                     <p class="text-red-100 text-sm mb-4 opacity-80 leading-relaxed">${project.desc}</p>
                     <div class="flex flex-wrap gap-2">

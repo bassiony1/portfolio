@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mahmoud Bassiony | Dark Mode</title>
+    <title>Mahmoud Bassiony Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
     <script>
@@ -24,7 +25,7 @@
       };
     </script>
   </head>
-  <body class="antialiased relative is-horizontal">
+  <body class="antialiased relative is-horizontal min-h-[100dvh]">
     <div
       id="home-content"
       class="absolute inset-0 flex flex-col justify-center items-end pr-8 md:pr-40 lg:pr-64 z-0 overflow-y-auto"
@@ -80,77 +81,170 @@
       id="bars-container"
       class="absolute inset-0 z-10 pointer-events-none min-h-[100dvh]"
     >
-      <!-- Professional Summary -->
+      <!-- History -->
       <div
-        class="portfolio-bar absolute pointer-events-auto shadow-[0_0_50px_rgba(0,0,0,0.5)] overflow-hidden bg-slate-900 border-l border-slate-800"
+        class="portfolio-bar absolute pointer-events-auto shadow-[0_0_50px_rgba(0,0,0,0.5)] overflow-hidden bg-[#312e81] border-l border-indigo-900"
         data-index="0"
       >
         <div
-          class="bar-handle absolute z-20 bg-[#0f172a] text-slate-400 flex items-center justify-center hover:bg-black hover:text-white cursor-pointer border-r border-slate-800 transition-colors duration-500"
+          class="bar-handle absolute z-20 bg-[#3730a3] text-indigo-200 flex items-center justify-center hover:bg-[#312e81] hover:text-white cursor-pointer border-r border-indigo-900"
         >
           <span
             class="handle-text text-sm md:text-lg font-bold tracking-[0.2em] uppercase"
-            >Professional Summary</span
+            >History</span
           >
         </div>
         <div
-          class="content-container absolute bg-[#0f172a] inset-0 z-10 flex flex-col text-slate-300"
+          class="content-container absolute bg-[#312e81] inset-0 z-10 flex flex-col text-indigo-100"
         >
           <div class="scroll-area flex-1 overflow-y-auto p-6 md:p-12 lg:p-16">
-            <div class="max-w-4xl mx-auto">
-              <h2 class="text-4xl md:text-6xl font-black mb-8 text-white">
-                Professional Summary
+            <div class="max-w-3xl mx-auto">
+              <h2 class="text-4xl md:text-6xl font-black mb-10 text-white">
+                History & Info
               </h2>
-              <div class="grid md:grid-cols-3 gap-8 mb-12">
-                <div
-                  class="md:col-span-2 text-lg text-slate-400 space-y-6 leading-relaxed"
-                >
-                  <p>
-                    Junior Computer Engineering with a disciplined,
-                    results-oriented mindset.
-                  </p>
-                  <p>
-                    I specialize in architecting scalable Backend systems using
-                    <span class="font-bold text-white"
-                      >Python, Django, and Docker</span
-                    >, with decent expertise in real-time communication and
-                    database optimization, combining technical precision with
-                    the leadership and adaptability gained from high-pressure
-                    service.
-                  </p>
-                  <!-- <div
-                    class="bg-[#1e293b] border-l-4 border-blue-900 p-4 rounded-r"
-                  >
-                    <p class="text-blue-300 font-semibold italic">
-                      "Award-winning developer (Dell Envision Top 27 MENA)
-                      combining technical precision with leadership gained from
-                      high-pressure service as a Platoon Leader."
-                    </p>
-                  </div> -->
-                </div>
-                <div
-                  class="bg-[#1e293b] p-6 rounded-xl h-fit border border-slate-800"
-                >
-                  <h3
-                    class="font-bold text-white mb-4 uppercase text-sm tracking-wider"
-                  >
-                    Contact Info
-                  </h3>
-                  <ul class="space-y-4 text-sm text-slate-400">
-                    <li class="flex items-center">
-                      <i class="fas fa-map-marker-alt w-6 text-slate-600"></i>
-                      Cairo, Egypt
+              <h3
+                class="text-2xl font-bold mb-6 border-b border-indigo-500 pb-2"
+              >
+                Professional Development
+              </h3>
+              <div class="space-y-8 mb-12">
+                <div>
+                  <div class="flex justify-between items-baseline mb-2">
+                    <h4 class="font-bold text-lg text-white">
+                      ITI - Python Backend Trainee
+                    </h4>
+                    <span class="text-xs text-indigo-300 font-mono"
+                      >Aug 2021</span
+                    >
+                  </div>
+                  <ul class="text-sm text-indigo-200">
+                    <li>
+                      Completed a 150-hour intensive bootcamp covering Python,
+                      PostgreSQL, and Django.
                     </li>
-                    <li class="flex items-center">
-                      <i class="fas fa-phone w-6 text-slate-600"></i> +20 115
-                      409 64
+                    <li>
+                      Designed and implemented relational database schemas and
+                      developed RESTful logic for web applications.
                     </li>
-                    <li class="flex items-center">
-                      <i class="fas fa-envelope w-6 text-slate-600"></i>
-                      mahmoudbassiony17@gmail.com
+                    <li>
+                      Built a final capstone project integrating the full stack
+                      (HTML, CSS, JS) with a Django backend.
                     </li>
                   </ul>
                 </div>
+                <div>
+                  <div class="flex justify-between items-baseline mb-2">
+                    <h4 class="font-bold text-lg text-white">
+                      ITI - Android Development Trainee
+                    </h4>
+                    <span class="text-xs text-indigo-300 font-mono"
+                      >Sep 2022</span
+                    >
+                  </div>
+                  <ul class="text-sm text-indigo-200">
+                    <li>
+                      Completed an intensive technical track focused on Native
+                      Android Development using Java.
+                    </li>
+                    <li>
+                      Developed functional mobile applications utilizing Android
+                      Layouts, Intents, and Adapter Views.
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <div class="flex justify-between items-baseline mb-2">
+                    <h4 class="font-bold text-lg text-white">
+                      Aspire Employability & Leadership Program
+                    </h4>
+                    <span class="text-xs text-indigo-300 font-mono"
+                      >Mar 2022</span
+                    >
+                  </div>
+                  <ul class="text-sm text-indigo-200">
+                    <li>
+                      Completed a comprehensive training program focused on
+                      professional character, competence, and commitment.
+                    </li>
+
+                    <li>
+                      Analyzed team dynamics and adopted strategies for
+                      high-performance team collaboration and conflict
+                      resolution.
+                    </li>
+                    <li>
+                      Developed skills in audience-tailored presentation and
+                      professional business communication.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Soft Skills -->
+              <h3
+                class="text-2xl font-bold mb-6 border-b border-indigo-500 pb-2"
+              >
+                Professional Attributes
+              </h3>
+              <div class="space-y-8 mb-12">
+                <div>
+                  <div class="flex justify-between items-baseline mb-2">
+                    <h4 class="font-bold text-lg text-white">
+                      Leadership & Discipline
+                    </h4>
+                  </div>
+                  <p class="text-sm text-indigo-200">
+                    Proven experience leading teams under high-pressure
+                    conditions as a Military Officer (Platoon Leader).
+                  </p>
+                </div>
+                <div>
+                  <div class="flex justify-between items-baseline mb-2">
+                    <h4 class="font-bold text-lg text-white">
+                      Integrity & Accountability
+                    </h4>
+                  </div>
+                  <p class="text-sm text-indigo-200">
+                    Committed to absolute professional honesty; I take full
+                    ownership of deliverables and deadlines.
+                  </p>
+                </div>
+                <div>
+                  <div class="flex justify-between items-baseline mb-2">
+                    <h4 class="font-bold text-lg text-white">Adaptability</h4>
+                  </div>
+                  <p class="text-sm text-indigo-200">
+                    Rapid learner capable of mastering new technologies quickly,
+                    with a strong ability to execute directives.
+                  </p>
+                </div>
+                <div>
+                  <div class="flex justify-between items-baseline mb-2">
+                    <h4 class="font-bold text-lg text-white">
+                      Meticulous Attention to Detail
+                    </h4>
+                  </div>
+                  <p class="text-sm text-indigo-200">
+                    Translating military precision into software development,
+                    ensuring clean code and error-free deployments.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="bg-indigo-950/50 p-6 rounded-lg border border-indigo-800"
+              >
+                <h3 class="text-xl font-bold mb-2 text-white">
+                  Military Service
+                </h3>
+                <p class="font-semibold text-indigo-300">
+                  Reserve Officer (Platoon Leader)
+                </p>
+                <p class="text-sm text-indigo-200 mt-2">
+                  Gained extensive experience in leadership, discipline, and
+                  high-pressure decision making.
+                </p>
               </div>
             </div>
           </div>
@@ -425,170 +519,78 @@
           </div>
         </div>
       </div>
-      <!-- History -->
+
+      <!-- Professional Summary -->
       <div
-        class="portfolio-bar absolute pointer-events-auto shadow-[0_0_50px_rgba(0,0,0,0.5)] overflow-hidden bg-[#312e81] border-l border-indigo-900"
+        class="portfolio-bar absolute pointer-events-auto shadow-[0_0_50px_rgba(0,0,0,0.5)] overflow-hidden bg-slate-900 border-l border-slate-800"
         data-index="4"
       >
         <div
-          class="bar-handle absolute z-20 bg-[#3730a3] text-indigo-200 flex items-center justify-center hover:bg-[#312e81] hover:text-white cursor-pointer border-r border-indigo-900"
+          class="bar-handle absolute z-20 bg-[#0f172a] text-slate-400 flex items-center justify-center hover:bg-black hover:text-white cursor-pointer border-r border-slate-800 transition-colors duration-500"
         >
           <span
             class="handle-text text-sm md:text-lg font-bold tracking-[0.2em] uppercase"
-            >History</span
+            >Professional Summary</span
           >
         </div>
         <div
-          class="content-container absolute bg-[#312e81] inset-0 z-10 flex flex-col text-indigo-100"
+          class="content-container absolute bg-[#0f172a] inset-0 z-10 flex flex-col text-slate-300"
         >
           <div class="scroll-area flex-1 overflow-y-auto p-6 md:p-12 lg:p-16">
-            <div class="max-w-3xl mx-auto">
-              <h2 class="text-4xl md:text-6xl font-black mb-10 text-white">
-                History & Info
+            <div class="max-w-4xl mx-auto">
+              <h2 class="text-4xl md:text-6xl font-black mb-8 text-white">
+                Professional Summary
               </h2>
-              <h3
-                class="text-2xl font-bold mb-6 border-b border-indigo-500 pb-2"
-              >
-                Professional Development
-              </h3>
-              <div class="space-y-8 mb-12">
-                <div>
-                  <div class="flex justify-between items-baseline mb-2">
-                    <h4 class="font-bold text-lg text-white">
-                      ITI - Python Backend Trainee
-                    </h4>
-                    <span class="text-xs text-indigo-300 font-mono"
-                      >Aug 2021</span
-                    >
-                  </div>
-                  <ul class="text-sm text-indigo-200">
-                    <li>
-                      Completed a 150-hour intensive bootcamp covering Python,
-                      PostgreSQL, and Django.
+              <div class="grid gap-8 mb-12">
+                <div
+                  class="md:col-span-2 text-lg text-slate-400 space-y-6 leading-relaxed"
+                >
+                  <p>
+                    Junior Computer Engineering with a disciplined,
+                    results-oriented mindset.
+                  </p>
+                  <p>
+                    I specialize in architecting scalable Backend systems using
+                    <span class="font-bold text-white"
+                      >Python, Django, and Docker</span
+                    >, with decent expertise in real-time communication and
+                    database optimization, combining technical precision with
+                    the leadership and adaptability gained from high-pressure
+                    service.
+                  </p>
+                  <!-- <div
+                    class="bg-[#1e293b] border-l-4 border-blue-900 p-4 rounded-r"
+                  >
+                    <p class="text-blue-300 font-semibold italic">
+                      "Award-winning developer (Dell Envision Top 27 MENA)
+                      combining technical precision with leadership gained from
+                      high-pressure service as a Platoon Leader."
+                    </p>
+                  </div> -->
+                </div>
+                <div
+                  class="bg-[#1e293b] p-6 rounded-xl h-fit border border-slate-800"
+                >
+                  <h3
+                    class="font-bold text-white mb-4 uppercase text-sm tracking-wider"
+                  >
+                    Contact Info
+                  </h3>
+                  <ul class="space-y-4 text-sm text-slate-400">
+                    <li class="flex items-center">
+                      <i class="fas fa-map-marker-alt w-6 text-slate-600"></i>
+                      Cairo, Egypt
                     </li>
-                    <li>
-                      Designed and implemented relational database schemas and
-                      developed RESTful logic for web applications.
+                    <li class="flex items-center">
+                      <i class="fas fa-phone w-6 text-slate-600"></i> +20 115
+                      409 64
                     </li>
-                    <li>
-                      Built a final capstone project integrating the full stack
-                      (HTML, CSS, JS) with a Django backend.
+                    <li class="flex items-center">
+                      <i class="fas fa-envelope w-6 text-slate-600"></i>
+                      mahmoudbassiony17@gmail.com
                     </li>
                   </ul>
                 </div>
-                <div>
-                  <div class="flex justify-between items-baseline mb-2">
-                    <h4 class="font-bold text-lg text-white">
-                      ITI - Android Development Trainee
-                    </h4>
-                    <span class="text-xs text-indigo-300 font-mono"
-                      >Sep 2022</span
-                    >
-                  </div>
-                  <ul class="text-sm text-indigo-200">
-                    <li>
-                      Completed an intensive technical track focused on Native
-                      Android Development using Java.
-                    </li>
-                    <li>
-                      Developed functional mobile applications utilizing Android
-                      Layouts, Intents, and Adapter Views.
-                    </li>
-                  </ul>
-                </div>
-
-                <div>
-                  <div class="flex justify-between items-baseline mb-2">
-                    <h4 class="font-bold text-lg text-white">
-                      Aspire Employability & Leadership Program
-                    </h4>
-                    <span class="text-xs text-indigo-300 font-mono"
-                      >Mar 2022</span
-                    >
-                  </div>
-                  <ul class="text-sm text-indigo-200">
-                    <li>
-                      Completed a comprehensive training program focused on
-                      professional character, competence, and commitment.
-                    </li>
-
-                    <li>
-                      Analyzed team dynamics and adopted strategies for
-                      high-performance team collaboration and conflict
-                      resolution.
-                    </li>
-                    <li>
-                      Developed skills in audience-tailored presentation and
-                      professional business communication.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <!-- Soft Skills -->
-              <h3
-                class="text-2xl font-bold mb-6 border-b border-indigo-500 pb-2"
-              >
-                Professional Attributes
-              </h3>
-              <div class="space-y-8 mb-12">
-                <div>
-                  <div class="flex justify-between items-baseline mb-2">
-                    <h4 class="font-bold text-lg text-white">
-                      Leadership & Discipline
-                    </h4>
-                  </div>
-                  <p class="text-sm text-indigo-200">
-                    Proven experience leading teams under high-pressure
-                    conditions as a Military Officer (Platoon Leader).
-                  </p>
-                </div>
-                <div>
-                  <div class="flex justify-between items-baseline mb-2">
-                    <h4 class="font-bold text-lg text-white">
-                      Integrity & Accountability
-                    </h4>
-                  </div>
-                  <p class="text-sm text-indigo-200">
-                    Committed to absolute professional honesty; I take full
-                    ownership of deliverables and deadlines.
-                  </p>
-                </div>
-                <div>
-                  <div class="flex justify-between items-baseline mb-2">
-                    <h4 class="font-bold text-lg text-white">Adaptability</h4>
-                  </div>
-                  <p class="text-sm text-indigo-200">
-                    Rapid learner capable of mastering new technologies quickly,
-                    with a strong ability to execute directives.
-                  </p>
-                </div>
-                <div>
-                  <div class="flex justify-between items-baseline mb-2">
-                    <h4 class="font-bold text-lg text-white">
-                      Meticulous Attention to Detail
-                    </h4>
-                  </div>
-                  <p class="text-sm text-indigo-200">
-                    Translating military precision into software development,
-                    ensuring clean code and error-free deployments.
-                  </p>
-                </div>
-              </div>
-
-              <div
-                class="bg-indigo-950/50 p-6 rounded-lg border border-indigo-800"
-              >
-                <h3 class="text-xl font-bold mb-2 text-white">
-                  Military Service
-                </h3>
-                <p class="font-semibold text-indigo-300">
-                  Reserve Officer (Platoon Leader)
-                </p>
-                <p class="text-sm text-indigo-200 mt-2">
-                  Gained extensive experience in leadership, discipline, and
-                  high-pressure decision making.
-                </p>
               </div>
             </div>
           </div>
