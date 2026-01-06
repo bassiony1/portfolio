@@ -63,7 +63,7 @@ const projectsData = [
     title: "Space tourism website",
     desc: "Multi-page space tourism website.",
     tech: ["HTML", "Tailwind CSS", "React.js", "Vite"],
-    link: "https://bassiony1.github.io/music-player/",
+    link: "https://space-tourism-ten-beta.vercel.app/",
   },
   {
     category: "frontend",
@@ -105,7 +105,7 @@ const projectsData = [
     title: "Music Player App",
     desc: "A sleek and modern dark music player application for anime Bleach soundtracks, featuring OST management and playback controls.",
     tech: ["HTML", "CSS", "js"],
-    link: "https://react-xo-game.vercel.app/",
+    link: "https://bassiony1.github.io/music-player/",
   },
   {
     category: "frontend",
@@ -114,13 +114,7 @@ const projectsData = [
     tech: ["HTML", "Vanilla CSS", "Vanilla js"],
     link: "https://bassiony1.github.io/sticky-notes/",
   },
-  {
-    category: "frontend",
-    title: "Space tourism website",
-    desc: "Multi-page space tourism website.",
-    tech: ["HTML", "Tailwind CSS", "React.js", "Vite"],
-    link: "https://space-tourism-ten-beta.vercel.app/",
-  },
+
   {
     category: "frontend",
     title: "Kayoanime Clone",
